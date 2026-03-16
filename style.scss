@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+
+$background_color: #070027;
+$cards_background: #f4f2fd;
+$font_color: #202842;
+$white: #ffffff;
+$button_hover: #1c1c1c;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Nunito", sans-serif;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: $background_color;
+  div.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 962px;
+    height: 434px;
+    border-radius: 16px;
+    background-color: $cards_background;
+    gap: 32px;
+
+    div.card {
+      width: 262px;
+      height: 370px;
+      background-color: $white;
+      border-radius: 8px;
+      padding: 32px;
+      box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.25);
+
+      div.list div.white {
+        opacity: 0;
+      }
+
+      &:hover {
+        background-color: $font_color;
+        h2,
+        p,
+        span,
+        div.text,
+        div.svgs svg {
+          color: $white;
+          fill: $white;
+          stroke: $white;
+        }
+        div.sub_now button {
+          background-color: $white;
+          color: $button_hover;
+          font-weight: 600;
+        }
+
+        div.list div.blue {
+          display: none;
+        }
+        div.list div.white {
+          opacity: 1;
+        }
+      }
+
+      div.list {
+        display: flex;
+        gap: 4px;
+        div.svgs {
+          display: flex;
+          flex-direction: column;
+          gap: 1px;
+        }
+        div.text {
+          margin-top: 2px;
+          display: flex;
+          flex-direction: column;
+          gap: 8.9px;
+        }
+      }
+      h2 {
+        color: $font_color;
+        font-weight: bold;
+        font-size: 32px;
+      }
+      p {
+        font-size: 16px;
+        color: $font_color;
+      }
+      span {
+        font-size: 36px;
+        font-weight: 600;
+        display: inline-block;
+        margin-top: 9px;
+        margin-bottom: 10px;
+      }
+      div.sub_now {
+        display: flex;
+        justify-content: center;
+        margin-top: 29px;
+        button {
+          width: 156px;
+          height: 38px;
+          border-radius: 50px;
+          border: none;
+          background-color: $font_color;
+          color: $white;
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}

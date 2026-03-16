@@ -1,1 +1,104 @@
-/*# sourceMappingURL=style.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Nunito", sans-serif;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #070027;
+}
+main div.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 962px;
+  height: 434px;
+  border-radius: 16px;
+  background-color: #f4f2fd;
+  gap: 32px;
+}
+main div.container div.card {
+  width: 262px;
+  height: 370px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 32px;
+  box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.25);
+}
+main div.container div.card div.list div.white {
+  opacity: 0;
+}
+main div.container div.card:hover {
+  background-color: #202842;
+}
+main div.container div.card:hover h2,
+main div.container div.card:hover p,
+main div.container div.card:hover span,
+main div.container div.card:hover div.text,
+main div.container div.card:hover div.svgs svg {
+  color: #ffffff;
+  fill: #ffffff;
+  stroke: #ffffff;
+}
+main div.container div.card:hover div.sub_now button {
+  background-color: #ffffff;
+  color: #1c1c1c;
+  font-weight: 600;
+}
+main div.container div.card:hover div.list div.blue {
+  display: none;
+}
+main div.container div.card:hover div.list div.white {
+  opacity: 1;
+}
+main div.container div.card div.list {
+  display: flex;
+  gap: 4px;
+}
+main div.container div.card div.list div.svgs {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+main div.container div.card div.list div.text {
+  margin-top: 2px;
+  display: flex;
+  flex-direction: column;
+  gap: 8.9px;
+}
+main div.container div.card h2 {
+  color: #202842;
+  font-weight: bold;
+  font-size: 32px;
+}
+main div.container div.card p {
+  font-size: 16px;
+  color: #202842;
+}
+main div.container div.card span {
+  font-size: 36px;
+  font-weight: 600;
+  display: inline-block;
+  margin-top: 9px;
+  margin-bottom: 10px;
+}
+main div.container div.card div.sub_now {
+  display: flex;
+  justify-content: center;
+  margin-top: 29px;
+}
+main div.container div.card div.sub_now button {
+  width: 156px;
+  height: 38px;
+  border-radius: 50px;
+  border: none;
+  background-color: #202842;
+  color: #ffffff;
+  font-size: 16px;
+}/*# sourceMappingURL=style.css.map */
