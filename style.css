@@ -31,31 +31,19 @@ main div.container div.card {
   padding: 32px;
   box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.25);
 }
-main div.container div.card div.list div.white {
-  opacity: 0;
-}
 main div.container div.card:hover {
   background-color: #202842;
 }
 main div.container div.card:hover h2,
 main div.container div.card:hover p,
 main div.container div.card:hover span,
-main div.container div.card:hover div.text,
-main div.container div.card:hover div.svgs svg {
+main div.container div.card:hover div.text {
   color: #ffffff;
-  fill: #ffffff;
-  stroke: #ffffff;
 }
 main div.container div.card:hover div.sub_now button {
   background-color: #ffffff;
   color: #1c1c1c;
   font-weight: 600;
-}
-main div.container div.card:hover div.list div.blue {
-  display: none;
-}
-main div.container div.card:hover div.list div.white {
-  opacity: 1;
 }
 main div.container div.card div.list {
   display: flex;
